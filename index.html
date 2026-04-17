@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- main container for the form -->
+  <div class="container">
+    <!-- page heading -->
+    <h1>Form Validator</h1>
+
+    <!-- form starts here -->
+    <form id="signup-form" novalidate>
+      <!-- email field group -->
+      <div class="form-group">
+        <!-- label for email input -->
+        <label for="email">Email</label>
+
+        <!-- input where user types email -->
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <!-- place for email error message -->
+        <small id="email-error" class="error-message"></small>
+      </div>
+
+      <!-- password field group -->
+      <div class="form-group">
+        <!-- label for password input -->
+        <label for="password">Password</label>
+
+        <!-- input where user types password -->
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <!-- place for password error message -->
+        <small id="password-error" class="error-message"></small>
+      </div>
+
+      <!-- confirm password field group -->
+      <div class="form-group">
+        <!-- label for confirm password input -->
+        <label for="confirm-password">Confirm Password</label>
+
+        <!-- input where user types password again -->
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+
+        <!-- place for confirm password error message -->
+        <small id="confirm-password-error" class="error-message"></small>
+      </div>
+
+      <!-- submit button -->
+      <button type="submit">Submit</button>
+
+      <!-- place for success message -->
+      <p id="success-message" class="success-message"></p>
+    </form>
+  </div>
+
+  <!-- connect JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
