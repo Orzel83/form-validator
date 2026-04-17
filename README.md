@@ -71,10 +71,10 @@ Validation Logic
 
 The application includes the following validation functions:
 
-isNotEmpty() – checks if input is not empty
-isValidEmail() – checks if email format is correct
-isPasswordLongEnough() – ensures password has at least 6 characters
-doPasswordsMatch() – checks if passwords match
+isNotEmpty() - checks if input is not empty
+isValidEmail() - checks if email format is correct
+isPasswordLongEnough() - ensures password has at least 6 characters
+doPasswordsMatch() - checks if passwords match
 
 Accessibility and Usability
 All inputs include labels for better accessibility
