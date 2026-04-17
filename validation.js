@@ -16,6 +16,17 @@ function isValidEmail(email) {
   // test email against regex and return result (true or false)
   return emailPattern.test(email);
 }
+// function checks if password has at least 6 characters
+function isPasswordLongEnough(password) {
+  // check length of password
+  return password.length >= 6;
+}
+
+// function checks if two passwords match
+function doPasswordsMatch(password, confirmPassword) {
+  // compare both values
+  return password === confirmPassword;
+}
 
 // export functions so they can be used in tests
-module.exports = { isNotEmpty, isValidEmail };
+module.exports = { isNotEmpty, isValidEmail, isPasswordLongEnough, doPasswordsMatch };

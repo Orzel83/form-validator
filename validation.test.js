@@ -40,3 +40,30 @@ test('returns false for email without domain', () => {
 test('returns false for empty email', () => {
   expect(isValidEmail('')).toBe(false);
 });
+// import new functions (update existing import)
+const { isPasswordLongEnough, doPasswordsMatch } = require('./validation');
+
+// test: password long enough
+test('returns true when password has at least 6 characters', () => {
+  expect(isPasswordLongEnough('123456')).toBe(true);
+});
+
+// test: password too short
+test('returns false when password is shorter than 6 characters', () => {
+  expect(isPasswordLongEnough('123')).toBe(false);
+});
+
+// test: empty password
+test('returns false when password is empty', () => {
+  expect(isPasswordLongEnough('')).toBe(false);
+});
+
+// test: matching passwords
+test('returns true when passwords match', () => {
+  expect(doPasswordsMatch('abc123', 'abc123')).toBe(true);
+});
+
+// test: different passwords
+test('returns false when passwords do not match', () => {
+  expect(doPasswordsMatch('abc123', 'abc321')).toBe(false);
+});
